@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+o = Organization.create :title => 'Something'
+l = Location.create :title => 'Somewhere'
+
+Item.create(:location => l, :organization => o)
